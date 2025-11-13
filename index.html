@@ -3,53 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Telémaco - Operadora local con visión global</title>
+  <title>Telémaco - Tu operador local con visión global</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="logo">Telémaco</div>
     <nav>
-      <a href="#tarifas">Tarifas</a>
-      <a href="#cobertura">Cobertura</a>
-      <a href="#contacto">Contacto</a>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tarifas">Tarifas móviles</a></li>
+        <li><a href="#fibra">Fibra + Móvil</a></li>
+        <li><a href="#cobertura">Cobertura</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Conectamos contigo. Aunque no lo parezca.</h1>
-    <p>Más de 20 años ofreciendo telecomunicaciones con visión… y algo de intuición.</p>
+  <section id="inicio" class="hero">
+    <h1>Tu operador local con visión global</h1>
+    <p>Más de 20 años conectando personas, dispositivos y sueños (algunos más realistas que otros).</p>
   </section>
 
-  <section id="tarifas">
-    <h2>Tarifas destacadas</h2>
-    <div class="plan">
+  <section id="tarifas" class="tarifas">
+    <h2>Tarifas móviles</h2>
+    <div class="card">
       <h3>Contigo 30</h3>
-      <p>30GB + llamadas ilimitadas por 9,90€/mes*</p>
+      <p>30GB + llamadas ilimitadas por 9,90€/mes</p>
       <small>*Cobertura garantizada en días soleados y zonas con nombre que empiece por “San”.</small>
     </div>
-    <div class="plan">
-      <h3>Fibra 600 + Móvil 100GB</h3>
-      <p>600Mb + 100GB + 3 líneas por 40,89€/mes*</p>
+    <div class="card">
+      <h3>Contigo 200</h3>
+      <p>200GB + llamadas ilimitadas por 24,90€/mes</p>
       <small>*Incluye acceso exclusivo al boletín de noticias de 2017.</small>
-    </div>
-    <div class="plan">
-      <h3>Roaming Atlántico</h3>
-      <p>Conexión experimental en Atlantis y zonas del Triángulo de las Bermudas.</p>
     </div>
   </section>
 
-  <section id="cobertura">
+  <section id="fibra" class="tarifas">
+    <h2>Fibra + Móvil</h2>
+    <div class="card">
+      <h3>Fibra 600Mb + 3 líneas con 100GB</h3>
+      <p>Por solo 40,89€/mes</p>
+      <small>*Red de Movistar y Orange. Y a veces intuición.</small>
+    </div>
+  </section>
+
+  <section id="cobertura" class="cobertura">
     <h2>Cobertura nacional</h2>
-    <p>Usamos redes de Movistar y Orange. Y a veces intuición.</p>
+    <p>Cobertura 4G+ en el 95% del territorio. El otro 5% está en fase de exploración.</p>
     <img src="mapa-cobertura.png" alt="Mapa de cobertura Telémaco" />
   </section>
 
-  <section id="contacto">
+  <section id="contacto" class="contacto">
     <h2>Contacto</h2>
     <form onsubmit="return inocente()">
       <input type="text" placeholder="Nombre" required />
-      <input type="email" placeholder="Correo" required />
+      <input type="email" placeholder="Correo electrónico" required />
       <textarea placeholder="Tu mensaje"></textarea>
       <button type="submit">Enviar</button>
     </form>
